@@ -5,7 +5,6 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using ToolBackupDataBaseNet.Mail.Model;
-
 namespace ToolBackupDataBaseNet.Mail
 {
     class Email:IDisposable     
