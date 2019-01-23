@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!--▄▄▄▄▄▄Seccion para SQL▄▄▄▄-->
+    <!--true|false-->
+    <add key="Sql_Backup_Enable" value="true"/>
+    <!--true (when SQL licence)|false (when express)-->
+    <add key="Sql_Backup_UseCompression" value="false"/>
+    <!--Path to put resulting files-->
+    <add key="Sql_Backup_FolderPath" value="D:\TEMP"/>
+    <!--Add DateTime in FileName-->
+    <add key="Sql_Backup_AddDateTimeInFileName" value="false"/>
+    <!--Delete PreviousFiles-->
+    <add key="Sql_Backup_DeleteExistingPreviousFiles" value="true"/>
+    
+    <!--Sql Conection-->
+    <add key="Sql_Conn_Server" value="(local)"/>
+    <add key="Sql_Conn_Port" value=""/>
+    <add key="Sql_Conn_User" value="sa"/>
+    <add key="Sql_Conn_Psw" value="admindamsa02"/>
+    <!--▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄-->
+    
+    <!--▄▄▄▄▄▄Seccion para ZIP▄▄▄▄-->
+    <!--Path for resulting compressed files-->
+    <add key="Zip_Destiny_Folder_Path" value="D:\TEMP"/>
+    <!--0=Optimal|1=Fastest|2=NoCompresion(default if invalid value)-->
+    <add key="Zip_CompressionLevel" value="1"/>
+    <!--Add DateTime in FileName-->
+    <add key="Zip_Destiny_AddDateTimeInFileName" value="true"/>
+    
+    <!--true|false-->
+    <add key="Zip_Folder_Enable" value="true"/>
+    <!--If wants to compress a full folder-->
+    <add key="Zip_Source_FullFolderPath" value="D:\EBARRIGA\Dropbox\Temprales Borrables\test"/>
+    <!--Path and FileName for resulting compressed file-->
+    <add key="Zip_Destiny_FileName" value="FullTempFolder"/>
+
+    <!--true|false-->
+    <add key="Zip_Files_Enable" value="true"/>
+    <!--If wants to compress file by file-->
+    <add key="Zip_Source_EachFileInFolder_Path" value="D:\TEMP"/>
+    <!--If wants to compress file by file, can specify the extention-->
+    <add key="Zip_Source_FilterExpression" value="*.bak"/>
+    <!--If wants to compress delete each compressed file, set to true-->
+    <add key="Zip_Source_DeleteAfterCompressing" value="true"/>
+    <!--▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄-->
+    
+    <!--▄▄▄▄▄▄Seccion para FTP▄▄▄▄-->
+    <!--true|false-->
+    <add key="Ftp_Upload_Enable" value="true"/>
+    <!--Path where FilesExists-->
+    <add key="Ftp_Folder_WithFilesToUpload" value="D:\TEMP"/>
+    <!--Filter Expression for selection files-->
+    <add key="Ftp_Folder_FilterExpression" value="*.zip"/>
+    <!--Add DateTime in server FileName-->
+    <add key="Ftp_Destiny_AddDateTimeInFileName" value="false"/>
+    <!--delete files after uploading-->
+    <add key="Ftp_Source_DeleteAfterUploading" value="true"/>
+    
+    <!--Ftp Server-->
+    <add key="Ftp_Url" value="www.damsa.com.mx"/>
+    <!--Ftp Folder Destiny Path-->
+    <add key="Ftp_ServerPath" value="Certificados_PvaV2/DAMSA"/>
+    <!--Ftp Account-->
+    <add key="Ftp_User" value="ClienteFTP"/>
+    <!--Ftp Password-->
+    <add key="Ftp_Pass" value="BOBODQJ1I1"/>
+    <!--▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄-->
+    
+    <!--▄▄▄▄▄▄Seccion para ZIP▄▄▄▄-->
+    <!--Email Conection-->
+    <add key="Email_Sender_Server" value="mail.damsa.com.mx"/>
+    <add key="Email_Sender_Port" value="2525"/>
+    <add key="Email_Sender_User" value="notificaciones"/>
+    <add key="Email_Sender_Pass" value="Acifiton1334&amp;"/>
+    <add key="Email_Sender_UseSsl" value="false"/>
+    <!--Email Recipients-->
+    <add key="Email_Sender_EmailAddres" value="noreply@damsa.com.mx"/>
+    <add key="Email_Sender_EmailMask" value="noreply@damsa.com.mx"/>
+    <add key="Email_To" value="cnava@damsa.com.mx,iherrada@damsa.com.mx"/>
+    <add key="Email_Cc" value="ebarriga@damsa.com.mx"/>
+    <!--Email Content-->
+    <add key="OnFailureEmail_Subject" value="Proceso respaldo de BD, compactacion y envío por FTP de prueba - concluido con Errores"/>
+    <add key="OnFailureEmail_Body" value="Por medio del Presente se le notifica que el proceso respaldo de BD, compactacion y envío por FTP de prueba fue concluido con errores: {0}"/>
+    <add key="OnSuccessEmail_Subject" value="Proceso respaldo de BD, compactacion y envío por FTP de prueba - concluido sin Errores"/>
+    <add key="OnSuccessEmail_Body" value="Por medio del Presente se le notifica que el proceso respaldo de BD, compactacion y envío por FTP de prueba fue concluido sin errores"/>
+    <!--▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄-->
+  </appSettings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+</configuration>
